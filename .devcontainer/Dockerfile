@@ -7,6 +7,9 @@ WORKDIR /workspace
 # Create a catkin workspace
 RUN mkdir -p /workspace/catkin_ws/src
 
+# Link python3 to python otherwise ROS scripts will fail
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 # install Git
 RUN apt-get update && apt-get install -y \
     git
