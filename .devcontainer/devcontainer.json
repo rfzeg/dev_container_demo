@@ -1,0 +1,10 @@
+{
+  "name": "ROS Noetic",
+  "image": "ros:noetic",
+  "workspaceMount": "source=dev_container_demo,target=/workspace",
+  "workspaceFolder": "/workspace",
+  "extensions": ["ms-vscode.github-vscode"],
+  "settings": {
+    "github.codespaces.cloneUrl": "https://github.com/rfzeg/dev_container_demo.git"
+  }
+}
